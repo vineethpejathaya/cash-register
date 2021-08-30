@@ -1,1 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+     
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.container{
+    
+    width:60%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px solid white;
+    border: 2px solid black;
+}
+
+.heading{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+i{
+    margin:10px;
+}
+
+.input-container{
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 5px;
+
+}
+
+.denomination-amount-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.denomination-container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.denomination-container ul{
+    width:100%;
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.denomination-container li{
+     margin: 8px;
+}
+
+.denomination-container input{
+    width:90px;
+    padding: 10px;
+}
+
+.denomination-add{
+    width:400px;
+    background-color: rgb(41, 41, 212);
+    color: beige;
+}
+
+.denomination-amount-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.input-container-item-hidden{
+    display: none;
+}
+
+.input-container i {
+    font-size: 25px; 
+}
+
+input{
+
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button{
+    
+    font-weight: 800;
+    padding:15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+small{
+    padding:10px;
+    color: red;
+    font-weight: 800;
+    margin-left: 35px;
+}
+.small{
+    visibility: hidden;
+}
+
+.smart{ 
+    visibility: visible;
+}
+
+h2{
+    text-align: center;
+    margin: 10px;
+}
+
+table, tr td {
+    border: 1px solid black;
+    text-align: center;
+    color:black;
+    font-weight: 700;
+    margin:10px;
+  }
+
+  td{
+     width:60px;
+  }
+
+  .balance-denomination{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  @media only screen and (max-width: 950px)
+  {
+    .container{
+        width: 100%;
+    }
+    .heading{
+        font-size: 25px;
+    }
+     h2{
+         font-size: 20px;
+     }
+    .input-container{
+        width: 80%;
+    }  
+  
+    td{
+        width:50px;
+    }
+    .input-container i {
+        font-size: 20px; 
+    }
+    
+    input{
+        padding: 13px;
+        font-size: 13px;
+    }
+    
+    button{   
+        padding:13px;
+        font-size: 13px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 850px)
+  {
+      .container{
+          width:100%;
+      }
+    
+    .heading{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+    .input-container{
+        width: 80%;
+    }
+
+  
+    td{
+        width:50px;
+    }
+
+    .denomination-add{
+        width:300px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 750px)
+  {
+    
+    .heading{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .input-container{
+        width: 80%;
+    }
+
+  
+    td{
+        width:50px;
+        font-size: 13px;
+    }
+
+    .denomination-add{
+        width:300px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 450px)
+  {
+    
+    .heading{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .input-container{
+        width: 80%;
+    }
+
+    td, th{
+        width:45px;
+        font-size: 13px;
+    }
+
+    .denomination-add{
+        width:250px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 350px)
+  {
+    
+    .heading{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .input-container{
+        width: 80%;
+    }
+
+    td, th{
+        width:30px;
+        font-size: 11px;
+    }
+
+    .denomination-add{
+        width:250px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 330px)
+  {
+    
+    .heading{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .input-container{
+        width: 80%;
+    }
+
+    td, th{
+        width:30px;
+        font-size: 10px;
+    }
+
+    .denomination-add{
+        width:200px;
+    }
+    
+  }

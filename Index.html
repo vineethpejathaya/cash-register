@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
 
+    <link rel="stylesheet" href="Style.css">
+
+     <!-- Style sheet for fonts-->
+     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <i class="fas fa-cash-register"></i>
+            <h1>Cash counter</h1>
+            
+        </div>
+        <div class="input-container">
+            <div class="bill-amount-input-container">
+                <h2>Bill amount</h2>
+                <i class="fas fa-receipt"></i>  <input class="bill-amount-input" type="number" placeholder="Enter the bill amount">
+                 <button id="bill-amount" class="bill-amount">Add</button>
+                 <br>
+                 <small class="small" id="small-bill">It's a required field</small>
+            </div>
+            <div class="payed-amount-input-container input-container-item-hidden">
+                <h2>Payed amount</h2>
+                <i class="fas fa-rupee-sign"></i> <input class="payed-amount-input" type="number" placeholder="Enter the amount payed">
+                <button id="payed-amount" class="payed-amount">Add</button>
+                <br>
+                <small class="small-payed small" id="small-payed">It's a required field</small>
+           </div>
+           <div class="denomination-amount-input-container  input-container-item-hidden">
+
+                <h2>Denomination of the amount payed</h2>
+
+                <div class="denomination-container ">
+
+                    <ul>
+                        <li><label>₹ 2000</label>
+                            <input class="deno" id="2000" type="number" placeholder="Count"></li> 
+                        <li>
+                            <label>₹ 500</label>
+                            <input class="deno" id="500" type="number" placeholder="Count"></li>
+                        <li> 
+                            <label>₹ 200</label>
+                            <input class="deno" id="200" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 100</label>
+                            <input class="deno" id="100" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 50</label>
+                            <input class="deno" id="50" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 20</label>
+                            <input class="deno" id="20" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 10</label>
+                            <input class="deno"  id="10" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 5</label>
+                            <input class="deno" id="5" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 2</label>
+                            <input class="deno" id="2" type="number" placeholder="Count"></li>
+                        <li>
+                            <label>₹ 1</label>
+                            <input class="deno" id="1" type="number" placeholder="Count"></li>
+                    </ul>
+
+                </div>
+            
+                    <button id="denomination-add" class="denomination-add">Add</button>
+                    <br>
+                    <small class="small" id="denomination-message">It's a required field</small>
+            </div>
+            <div class="final-message-container input-container-item-hidden">
+                  <p class="final-message"></p>
+            </div>
+        </div>
+       
+        <div class="available-denomination-table">
+            <h2>Available Denomination</h2>
+            <table class="available-denomination">
+    
+            </table>
+        </div> 
+
+    </div>
+
+  
+    <script src="Script.js"></script>
+</body>
+</html>
